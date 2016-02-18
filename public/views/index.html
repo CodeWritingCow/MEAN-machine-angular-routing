@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="app.routes.js"></script>
 </head>
 
-<body class="container">
+<body class="container" ng-app="routerApp" ng-controller="mainController as main">
 	<!-- HEADER AND NAVBAR -->
 	<header>
 		<nav class="navbar navbar-default">
@@ -39,9 +39,11 @@
 
 	<!-- MAIN CONTENT AND INJECTED VIEWS -->
 	<main>
-		stuff goes here!
+
 		<!-- angular templating will go here -->
 		<!-- this is where content will be injected-->
+
+		<div ng-view></div>
 	</main>
 </body>
 </html>
